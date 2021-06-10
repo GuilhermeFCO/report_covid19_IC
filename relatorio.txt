@@ -1,0 +1,19 @@
+Introdução
+	Sars-Cov Mers-Cov
+	Sars-Cov-2
+	IDH
+	Objetivos
+	Estrutura de Trabalho
+
+Materiais e Metodos
+	Referencial Bibliografico	
+	Shiny	
+		(O que e, como criar, beneficios,
+		Banco de dados utilizados,
+		Vizualizações Gráficas)
+
+Resultados
+	Covid
+	IDH
+	Correlação entre
+	Apresentações do trabalho
