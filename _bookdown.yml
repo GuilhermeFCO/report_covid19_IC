@@ -3,7 +3,7 @@ book_filename: "ic"
 delete_merged_file: true
 language:
   ui:
-    chapter_name: "Capítulo  "
+    chapter_name: "Capítulo "
   label:
     fig: "Figura "
     tab: "Tabela "
@@ -13,5 +13,7 @@ rmd_files:
          "Referencias.Rmd",
          "./apendice/Apendice.Rmd"]
   latex: ["abstract.Rmd", 
-          "./latex/01-introducao.Rmd",
+          "./latex/01-Introducao.Rmd",
+          "./latex/02-MateriaisMetodos.Rmd",
+          "./latex/03-Resultados.Rmd",
           "Referencias.Rmd"]
