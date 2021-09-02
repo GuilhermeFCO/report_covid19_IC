@@ -4,8 +4,8 @@
 %
 \documentclass[
   fleqn,ebook]{ic}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,7 +41,8 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -50,7 +51,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -106,12 +107,15 @@
 \coorientador{}
 \orientador{Fernando de Souza Bastos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{abbrvnat3}
 
 \title{Análise Descritiva e Comparativa da Covid-19}
 \author{Guilherme Fernandes Castro de Oliveira}
-\date{Última atualização: 23/05/2021}
+\date{Última atualização: 02/09/2021}
 
 \begin{document}
 \maketitle
@@ -366,63 +370,23 @@ presença de febre, tosse e dificuldade de respirar, é indicado procurar
 atendimento médico imediatamente. Primeiramente ligue por telefone se puder e
 siga as instruções da autoridade de saúde local.
 
-\hypertarget{anuxe1lise-de-dados}{%
-\subsection{Análise de Dados}\label{anuxe1lise-de-dados}}
-
-A pandemia do vírus SARS-CoV-2 afetou o mundo em diversas áreas, como saúde
-pública, economia, etc. O foco mundial está direcionado em conter a
-pandemia e descobrir uma vacina eficiente, para podermos mensurar os danos
-causados, e que ainda vão causar, e tentar reduzí-los, precisamos construir um
-modelo estatística que descreva os dados que já possuimos.
-
-Já existem diversos artigos mostrando modelos já criados tentando descrever os
-dados, mas de acordo com o artigo \citep{roda2020difficult}, no começo da pandemia
-havia uma dificuldade em encontrar um modelo que se adequava de forma correta
-com a pandemia pois existiam o número muito baixo de dados e de variáveis para
-serem trabalhadas. Os autores do mesmo artigo conseguiram mostrar que um modelo
-SIR tem um desempenho melhor que um modelo SEIR para representar o número de
-casos confirmados, e que um modelo mais complexo podem não ser mais confiáveis
-comparado com uso de modelos mais simples.
-
-Uma das melhores formas de podermos vizualizar os dados para serem analisados é
-através de gráficos, nesse contexto existem os dashboards, que são uma forma
-de apresentar esses gráficos para a população. Um dos mais completos hoje é
-da universidade Jhons Hopkin \citep{jhonHopkins}, o dashboard que pode ser acessado
-em \citep{jhonHopkinsMap} podemos observar um mapa global que mostra os países com os
-maiores números de casos confirmados do vírus, também os com maiores números de
-mortes, gráficos com o número de casos diários e diversos outros. Na data de 05
-de Novembro de 2020, segundo esse dashboard são 48.541.340 de casos confirmados
-no mundo e 1.230.600 mortos, no Brasil são 5.590.025 casos confirmados e
-161.106 mortos.
-
-\hypertarget{banco-de-dados}{%
-\subsubsection{Banco de Dados}\label{banco-de-dados}}
-
-Para conseguirmos estudar os dados primeiramente precisamos de um local onde
-encontramos estes dados armazenados, no caso um banco de dados. Primeiramente
-devemos coletar estes dados, cada país possui seus próprios meios e
-responsáveis, no caso do Brasil esse trabalho é feito pelas 27 secretarias de
-saúde estaduais do Brasil. Um dos sites que nos fornece um banco de dados da
-COVID 19 é o Brasil.io \citep{brasil.io}, este mantido através do trabalho de forma
-voluntária de dezenas de pessoas que diariamente compilam os boletins
-epidemiológicos das secretarias de forma manual, no site \citep{colaboradores}
-encontra-se os voluntários.
-
-\hypertarget{anuxe1lises-realizadas-no-brasil}{%
-\subsubsection{Análises Realizadas no Brasil}\label{anuxe1lises-realizadas-no-brasil}}
-
-Muitas universidades, instituições governamentais e privadas estam analisando
-os dados para conseguir respostas sobre os danos feitos por essa pandemia.
-Segundo o artigo {[}@{]}
+\hypertarget{uxedndice-de-desenvolvimento-humano}{%
+\subsection{Índice de Desenvolvimento Humano}\label{uxedndice-de-desenvolvimento-humano}}
 
 \hypertarget{objetivos}{%
 \subsection{Objetivos}\label{objetivos}}
 
-Nesse contexto de analise de dados o nosso interesse é mensurar os impactos da
-pandemia, na área da saúde, economia, quais foram as pessoas que
-mais foram afetadas. Tentaremos também utilizar modelos estatísticos para
-conseguir fazer uma inferência e prever o número de pessoas que ainda seram
-infectadas, número de mortes, economia e saúde pública.
+\hypertarget{estrutura-de-trabalho}{%
+\subsection{Estrutura de Trabalho}\label{estrutura-de-trabalho}}
+
+\hypertarget{MateriaisMetodos}{%
+\section{Materiais e Métodos}\label{MateriaisMetodos}}
+
+\hypertarget{shiny}{%
+\subsection{Shiny}\label{shiny}}
+
+\hypertarget{Resultados}{%
+\section{Resultados}\label{Resultados}}
 
 \nocite{*}
 

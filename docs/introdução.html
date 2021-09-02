@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 1 Introdução | Análise Descritiva e Comparativa da Covid-19</title>
   <meta name="description" content="Iniciação Científica aprovado no edital PIBIC 2020" />
-  <meta name="generator" content="bookdown 0.20.6 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.23.5 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 1 Introdução | Análise Descritiva e Comparativa da Covid-19" />
   <meta property="og:type" content="book" />
@@ -32,7 +32,9 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="index.html"/>
 <link rel="next" href="referências.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.10.6/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,10 +50,33 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="styles/style.css" type="text/css" />
 </head>
@@ -95,11 +120,11 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introdução" class="section level1">
-<h1><span class="header-section-number">Capítulo  1</span> Introdução</h1>
+<div id="introdução" class="section level1" number="1">
+<h1><span class="header-section-number">Capítulo 1</span> Introdução</h1>
 <p>Na década de 60 o virologista britânico David Tyrrell realizava pesquisas sobre
 a gripe comum que tinha como objeto de estudo lavagens nasais de voluntários,
-este estudo gerou um artigo <span class="citation">(Tyrrell and Bynoe <a href="referências.html#ref-tyrrell1965cultivation" role="doc-biblioref">1965</a>)</span>. A equipe de Tyrrell
+este estudo gerou um artigo <span class="citation">(<a href="#ref-tyrrell1965cultivation" role="doc-biblioref">Tyrrell and Bynoe 1965</a>)</span>. A equipe de Tyrrell
 também estudava diferentes vírus humanos e animais, entre eles havia um vírus
 da hepatite de camundongo, vírus da bronquite infecciosa, vírus da
 gastroenterite transmitidos por suíno, como outros.</p>
@@ -110,7 +135,7 @@ como, influenza A, B ou C, pars-influenza 1, 2, 3 ou 4, vírus sincicial
 respiratório, mas nenhum foi encontrado. Assim sendo, eles descobriram um novo
 patógeno, que provocava os sintomas de uma gripe comum, entretanto fracassaram
 em cultivá-lo em cultura celular de rotina para o prosseguimento dos estudos.
-No entanto, de acordo com uma reportagem da BBC<span class="citation">(BBC <a href="referências.html#ref-almeidaBBC" role="doc-biblioref">2020</a>)</span>, os estudos
+No entanto, de acordo com uma reportagem da BBC<span class="citation">(<a href="#ref-almeidaBBC" role="doc-biblioref">BBC 2020</a>)</span>, os estudos
 obtiveram importantes avanços após a virologista escocesa June Almeida, se
 juntar à equipe de Tyrrel para fazer parte da unidade de pesquisa do resfriado
 comum, após ser convidada a trabalhar na escola de medicina do hospital St. 
@@ -125,28 +150,28 @@ novo gênero de vírus denominado corona, onde este nome denotava a aparência
 semelhante a uma coroa da superfície na estrutura morfológica dos vírus, sendo
 possível obervar na imagem <a href="introdução.html#fig:coroa">1.1</a>.</p>
 <div class="imageCenter">
-<div class="figure" style="text-align: center"><span id="fig:coroa"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:coroa"></span>
 <img src="img/coroa.jpg" alt="Imagem retirada do artigo [@holmes1999coronaviruses" width="40%" />
 <p class="caption">
-Figura 1.1: Imagem retirada do artigo [<span class="citation">Holmes (<a href="referências.html#ref-holmes1999coronaviruses" role="doc-biblioref">1999</a>)</span>
+Figura 1.1: Imagem retirada do artigo [<span class="citation"><a href="#ref-holmes1999coronaviruses" role="doc-biblioref">Holmes</a> (<a href="#ref-holmes1999coronaviruses" role="doc-biblioref">1999</a>)</span>
 </p>
 </div>
 </div>
 <p>Na mesma época existiam outros pesquisadores estudando doenças respiratórias
 similares, entre eles Dorothy Hamre e John J Procknow, que analisaram amostras
 obtidas de estudantes de medicina com resfriado e relataram um tipo semelhante
-de vírus que denominaram de 229E <span class="citation">(Hamre and Procknow <a href="referências.html#ref-hamre1966new" role="doc-biblioref">1966</a>)</span>. Outro pesquisador, o doutor
+de vírus que denominaram de 229E <span class="citation">(<a href="#ref-hamre1966new" role="doc-biblioref">Hamre and Procknow 1966</a>)</span>. Outro pesquisador, o doutor
 Kenneth McIntosh estava pesquisando sobre assuntos similares e conseguiu isolar
 agentes sensíveis ao éter de outra amostra do sistema respiratório humano, e por
 serem cultivados em cultura de órgãos foram denominados de “OC”
-<span class="citation">(McIntosh et al. <a href="referências.html#ref-mcintosh1967recovery" role="doc-biblioref">1967</a>)</span>. Outros estudos feitos por McIntosh com técnicas
+<span class="citation">(<a href="#ref-mcintosh1967recovery" role="doc-biblioref">McIntosh et al. 1967</a>)</span>. Outros estudos feitos por McIntosh com técnicas
 sorológicas avançadas foi obtido como resultado novas informações sobre os
 surtos dos coronavírus, por exemplo, ocorrem mais em estações chuvosas, inverno
-e primavera do que no verão <span class="citation">(Mcintosh et al. <a href="referências.html#ref-mcintosh1970seroepidemiologic" role="doc-biblioref">1970</a>)</span>. Entre os
+e primavera do que no verão <span class="citation">(<a href="#ref-mcintosh1970seroepidemiologic" role="doc-biblioref">Mcintosh et al. 1970</a>)</span>. Entre os
 diferentes vírus da família corona os que mais extensivamente estudadas foram
 o 229E e o OC43.</p>
 <p>Após varios estudos epidemológicos de diferentes autores, citados no artigo
-<span class="citation">(Jahangir, Muheem, and Rizvi <a href="referências.html#ref-jahangir2020coronavirus" role="doc-biblioref">2020</a>)</span>, os coronavírus foram descobertos associados a
+<span class="citation">(<a href="#ref-jahangir2020coronavirus" role="doc-biblioref">Jahangir, Muheem, and Rizvi 2020</a>)</span>, os coronavírus foram descobertos associados a
 outras doenças ja conhecidas pelos médicos, a maioria delas doenças
 respiratórias como bronquite crônica, asma em adultos e idosos sendo a mais
 predominante pneumonia em crianças e jovens adultos. Como já dito antes os
@@ -157,9 +182,32 @@ limitaram apenas o sistema respiratório, mas também, a encefalite, hepatite e
 gastroenterite. Com base em estudos tanto genéticos e antigênicos, foi possível
 categorizar os coronavírus tanto humanos quanto animais em 3 grandes divisões,
 podendo ser observada na tabela [tab:corona3div], retirada do artigo
-<span class="citation">(Jahangir, Muheem, and Rizvi <a href="referências.html#ref-jahangir2020coronavirus" role="doc-biblioref">2020</a>)</span>.</p>
+<span class="citation">(<a href="#ref-jahangir2020coronavirus" role="doc-biblioref">Jahangir, Muheem, and Rizvi 2020</a>)</span>.</p>
 
-
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-almeidaBBC" class="csl-entry">
+BBC. 2020. <span>“A Cientista Que Descobriu o Primeiro Coronavírus Humano - Após Ter Abandonado Escola Aos 16 Anos.”</span> <a href="https://www.bbc.com/portuguese/geral-52303032">https://www.bbc.com/portuguese/geral-52303032</a>.
+</div>
+<div id="ref-hamre1966new" class="csl-entry">
+Hamre, Dorothy, and John J Procknow. 1966. <span>“A New Virus Isolated from the Human Respiratory Tract.”</span> <em>Proceedings of the Society for Experimental Biology and Medicine</em> 121 (1): 190–93.
+</div>
+<div id="ref-holmes1999coronaviruses" class="csl-entry">
+Holmes, Kathryn V. 1999. <span>“Coronaviruses (Coronaviridae).”</span> <em>Encyclopedia of Virology</em>, 291.
+</div>
+<div id="ref-jahangir2020coronavirus" class="csl-entry">
+Jahangir, Mohammed Asadullah, Abdul Muheem, and Midhat Fatima Rizvi. 2020. <span>“Coronavirus (COVID-19): History, Current Knowledge and Pipeline Medications.”</span> <em>International Journal of Pharmaceutics &amp; Pharmacology</em> 4 (1).
+</div>
+<div id="ref-mcintosh1967recovery" class="csl-entry">
+McIntosh, Kenneth, Jane H Dees, Walter B Becker, Albert Z Kapikian, and Robert M Chanock. 1967. <span>“Recovery in Tracheal Organ Cultures of Novel Viruses from Patients with Respiratory Disease.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 57 (4): 933.
+</div>
+<div id="ref-mcintosh1970seroepidemiologic" class="csl-entry">
+Mcintosh, Kenneth, Albert Z Kapikian, Horace C Turner, Janet W Hartley, Robert H Parrott, and Robert M Chanock. 1970. <span>“Seroepidemiologic Studies of Coronavirus Infection in Adults and Children.”</span> <em>American Journal of Epidemiology</em> 91 (6): 585–92.
+</div>
+<div id="ref-tyrrell1965cultivation" class="csl-entry">
+Tyrrell, DAJ, and ML Bynoe. 1965. <span>“Cultivation of a Novel Type of Common-Cold Virus in Organ Cultures.”</span> <em>British Medical Journal</em> 1 (5448): 1467.
+</div>
 </div>
             </section>
 
@@ -171,7 +219,6 @@ podendo ser observada na tabela [tab:corona3div], retirada do artigo
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -190,6 +237,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -210,6 +258,10 @@ gitbook.start({
 "text": null
 },
 "download": ["ic.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

@@ -9,10 +9,10 @@ language:
     tab: "Tabela "
 rmd_files:
   html: ["index.Rmd",
-         "./html/01-Introducao.rmd",
+         "./html/01-Introducao.Rmd",
          "Referencias.Rmd",
          "./apendice/Apendice.Rmd"]
-  latex: ["abstract.Rmd", 
+  latex: ["abstract.Rmd",
           "./latex/01-Introducao.Rmd",
           "./latex/02-MateriaisMetodos.Rmd",
           "./latex/03-Resultados.Rmd",
