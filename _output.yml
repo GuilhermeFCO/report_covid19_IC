@@ -11,7 +11,7 @@ bookdown::pdf_book:
   toc: false
   includes:
     in_header: preamble.tex
-    after_body: apendice/Apendice.tex
+    # after_body: apendice/Apendice.tex
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes

@@ -1,4 +1,97 @@
 # Materiais e Métodos {#MateriaisMetodos}
 
-## Shiny
+Primeiramente foram criados alguns protótipos para o aprendizado sobre
+o pacote *Shiny* do *Software R*, este permite a criação de aplicativos
+dinâmicos em linguagem *R*. Foram utilizados os dados da Covid-19 para criar 
+gráficos de linhas, gráficos de barras e mapas interativos através dos pacotes 
+*ggplot2*, *plotly* e *geobr*. 
 
+Com protótipos feitos, e aprendido como os pacotes funcionavam, partimos para
+decidir como iriamos armazenar e atualizar os bancos de dados de forma 
+automática. Para isso foi criado um pacote em *R*, denominado *covidBR*,
+onde é possível fazer o  *download* dos dados atualizados diretamente da 
+plataforma do Governo, através do pacote *covid19br*, também fornecendo uma 
+função que cria o banco de dados para a construção dos mapas com o pacote 
+*geobr*. O diferencial do pacote é que ele fornece não somente o banco de dados
+da Covid-19 mas como também os dados do IDH, GINI e IVS, retirados do 
+\cite{atlas}, das Cidades, Microrregiões, Mesorregiões, Estados, Regiões e do
+País.
+
+Para armazenar os bancos de dados foi utilizado um repositório na plataforma
+*Github*. Esta plataforma além de ser gratuita contém outros diferenciais, como
+a ferramenta *Github Actions*, esta foi utilizada para atualizar o banco de 
+dados diariamente de forma automático. Depois de corretamente configurado, os
+servidores do *Github* criam uma máquina virtual, instala o *Softare R*, e roda
+um *script* que instala o pacote criado, utiliza as funções e salva no 
+repositório \url{https://github.com/GuilhermeFCO/dataBaseCovid19}, assim ficando
+disponível para a leitura do banco de dados diretamente online, não necessitando
+ter que baixá-los ne uma máquina local.
+
+Devido a quantidade de dados, e as visualizações gráficas, nenhum servidor
+gratuito suportou o aplicativo. Para superar essa barreira, o aplicativo
+foi dividido em pequenos aplicativos *shiny*, no total foram mais de 30. Dessa
+forma foi possível disponibilizar o relatório completo.
+
+Para atingir o objetivo principal foi criado um *Website*, o Covid-19 Brasil, 
+este contendo os dados da Covid-19 no Brasil, o Índice de Desenvolvimento Humano
+(IDH), o Índice  de GINI, o Índice de Vulnerabilidade Social (IVS), e 
+correlações entre estes índices e a doença.
+
+Foi decidido 3 tipos de gráficos que estão contidos no *site*, criados através 
+dos pacotes *covidBR*, *plotly* e *ggplot2*, sendo gráficos interativos. O 
+primeiro é um mapa de calor, que pode ser observado na figura a seguir.
+
+\begin{figure}[H]
+    \centering
+    \caption{Mapa de calor do Número de Casos Acumulados no Brasil}
+    \includegraphics[width=10cm]{img/mapa.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:mapa}
+\end{figure}
+
+Este mapa mostra o Número de Casos Acumulados no Brasil, como é possível 
+observar, a região Sudeste está preenchido com uma cor mais escura que as outras
+regiões, isso indica que a região Sudeste tem mais casos acumulados do que as 
+demais regiões. Com este gráfico de mapa de calor, também é possível observar
+outros fatores. No site ele está sendo utilizado com os dados de número de casos
+acumulados da Covid, novos casos confirmados, número de óbitos acumulados, 
+número  de novos óbitos, IDH, IVS, Índice de GINI, correlação entre os índices e 
+os dados da Covid-19.
+
+Outro gráfico foi o de barras, neste contendo o número de novos casos 
+confirmados e o número de novos óbitos, quando se passa o *mouse* sobre o 
+gráfico, é possível observar o número de novos casos confirmados e o número de
+novos óbitos na data, como é possível observar na figura abaixo.
+
+\begin{figure}[H]
+    \centering
+    \caption{Gráfico de Barras do Número de Novos Casos Confirmados e Novos Óbitos no Brasil}
+    \includegraphics[width=10cm]{img/barra.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:barra}
+\end{figure}
+
+Há também o gráfico de densidade. Nele sendo possível observar o número de casos
+acumulados e número de óbitos acumulados, e sendo interativo como o anterior.
+
+\begin{figure}[H]
+    \centering
+    \caption{Gráfico Densidade do Número de Casos Acumulados e Casos Acumulados de Óbitos no Brasil}
+    \includegraphics[width=10cm]{img/densidade.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:densidade}
+\end{figure}
+
+Além dos gráficos também foram utilizadas caixas, nelas contendos valores, como
+por exemplo o número de casos acumulados. Mas também, foram utilizadas para o
+número de óbitos acumulados, número de novos casos confirmados, número de novos
+óbitos, IDH, IVS, Índice de GINI, as correlações entre os índices e os dados da
+covid e seus respectivos *p-value*.
+
+\begin{figure}[H]
+    \centering
+    \caption{Caixa Mostrando o Número de Casos Acumulados no Brasil}
+    \includegraphics[width=10cm]{img/caixa.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:caixa}
+\end{figure}

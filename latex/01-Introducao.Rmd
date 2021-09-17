@@ -169,12 +169,15 @@ presença de febre, tosse e dificuldade de respirar, é indicado procurar
 atendimento médico imediatamente. Primeiramente ligue por telefone se puder e 
 siga as instruções da autoridade de saúde local.
 
-## Objetivos
+# Objetivos
 
 O objetivo principal do projeto foi construir através do *Software R* e seus 
 pacotes, um relatório dinâmico sobre a Covid-19 e a evolução da pandemia no
-Brasil. Também, entender o motivo da doença atingir distintos lugares com níveis
-diferentes. 
-
-
-## Estrutura de Trabalho
+Brasil. Também, entender o motivo da doença atingir distintos lugares em níveis
+diferentes, para isso, foram utilizados alguns indicadores sobre a qualidade de
+vida local. O Índice de Desenvolvimento Humano (IDH) que segundo \cite{pnudidh}
+se baseia na renda, educação e saúde local, o Índice de GINI, segundo 
+\cite{ipeagini}, que mede o grau de desigualdade entre os mais pobres dos mais
+ricos, e o Índice de Vulnerabilidade Social (IVS) que é uma média de subíndices
+IVS Infraestrutura Urbana, IVS Capital Humano, IVS Renda e Trabalho, segundo
+\cite{ipeaivs}.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.16)  16 SEP 2021 21:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.9.16)  17 SEP 2021 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,7 +1312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--185
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.2pt
+text indent calculated (toc, 0): 12.756pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 38.39996pt
 number noindent (toc, 0): 0.0pt
@@ -1346,66 +1346,31 @@ text indent calculated (toc, 2): 21.024pt
 number indent calculated (toc, 2): 45.60004pt
 text noindent (toc, 2): 38.39996pt
 number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  45.60004pt
-text indent calculated (toc, 2): 21.024pt
-number indent calculated (toc, 2): 45.60004pt
-text noindent (toc, 2): 38.39996pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  45.60004pt
-text indent calculated (toc, 2): 21.024pt
-number indent calculated (toc, 2): 45.60004pt
-text noindent (toc, 2): 38.39996pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  45.60004pt
-text indent calculated (toc, 2): 21.024pt
-number indent calculated (toc, 2): 45.60004pt
-text noindent (toc, 2): 38.39996pt
-number noindent (toc, 2): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.2pt
-number indent calculated (toc, 0): 0.0pt
-text noindent (toc, 0): 38.39996pt
-number noindent (toc, 0): 0.0pt
-number indent by \l@... (toc, 2):  45.60004pt
-text indent by \l@... (toc, 2):  38.39996pt
-number indent by parent (toc, 2):  45.60004pt
-text indent calculated (toc, 2): 21.024pt
-number indent calculated (toc, 2): 45.60004pt
-text noindent (toc, 2): 38.39996pt
-number noindent (toc, 2): 0.0pt
-number indent by \l@... (toc, 0):  0.0pt
-text indent by \l@... (toc, 0):  18.0pt
-number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.2pt
+text indent calculated (toc, 0): 12.756pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 38.39996pt
 number noindent (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.2pt
+text indent calculated (toc, 0): 12.756pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 38.39996pt
 number noindent (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.2pt
+text indent calculated (toc, 0): 12.756pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 38.39996pt
 number noindent (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.2pt
+text indent calculated (toc, 0): 12.756pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 38.39996pt
 number noindent (toc, 0): 0.0pt
@@ -1448,64 +1413,93 @@ File: img/origin.png Graphic file (type bmp)
 [4] [5]
 Cap\'{\i }tulo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 374--374
 
  []
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 386.
 
 [6
 
 ]
 Cap\'{\i }tulo 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--389
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
 
  []
 
-(./ic.bbl [7
+[7
 
 ]
+File: img/mapa.png Graphic file (type bmp)
+<img/mapa.png>
+File: img/barra.png Graphic file (type bmp)
+<img/barra.png>
+[8]
+File: img/densidade.png Graphic file (type bmp)
+<img/densidade.png>
+File: img/caixa.png Graphic file (type bmp)
+<img/caixa.png>
+[9] [10]
+Cap\'{\i }tulo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
+
+ []
+
+
+Overfull \hbox (36.91864pt too wide) in paragraph at lines 497--502
+[]\TU/lmr/m/n/12 O principal resultado foi o \TU/lmr/m/it/12 Website \TU/lmr/m/
+n/12 Covid-19 Brasil, disponível em []$[][][][][][][][][][][][][][][][][][][][]
+[][] []
+ []
+
+File: img/inicio.png Graphic file (type bmp)
+<img/inicio.png>
+File: img/covidbrasil.png Graphic file (type bmp)
+<img/covidbrasil.png>
+[11
+
+]
+File: img/estadoidh.png Graphic file (type bmp)
+<img/estadoidh.png>
+File: img/regioescorr.png Graphic file (type bmp)
+<img/regioescorr.png>
+[12]
+File: img/relatorio.png Graphic file (type bmp)
+<img/relatorio.png>
+(./ic.bbl [13]
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
-[8
 
-] [9]) [10]
-Ap\^endice A.
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
-
+Underfull \hbox (badness 7064) in paragraph at lines 49--55
+[]\TU/lmr/m/n/12 I. I. de Pesquisa Econômica Aplicada.  O que é? - Índice de
  []
 
-[11
 
-]
-Ap\^endice B.
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
-
+Underfull \hbox (badness 1527) in paragraph at lines 49--55
+\TU/lmr/m/n/12 gini.  []$[][][][][] [] [] [] [][][][][][][][][][][][][][][] [] 
+[][][][][][][][] [] [][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][
+][][] []
  []
 
+[14
+
+] [15])
 
 Package natbib Warning: There were undefined citations.
 
-[12
-
-] (./ic.aux)
+[16] (./ic.aux)
 Package rerunfilecheck Info: File `ic.out' has not changed.
-(rerunfilecheck)             Checksum: 31A4564C54560737C785D71861878D68;1676.
+(rerunfilecheck)             Checksum: 463D3BA90D111CA3BD68BD997917A891;887.
  ) 
 Here is how much of TeX's memory you used:
- 25493 strings out of 478492
- 448968 string characters out of 5861680
- 1022586 words of memory out of 5000000
- 45297 multiletter control sequences out of 15000+600000
- 422975 words of font info for 86 fonts, out of 8000000 for 9000
+ 25576 strings out of 478492
+ 450531 string characters out of 5861680
+ 1022245 words of memory out of 5000000
+ 45367 multiletter control sequences out of 15000+600000
+ 422991 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,11n,120p,367b,585s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,11n,120p,367b,584s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ic.pdf (20 pages).
+Output written on ic.pdf (24 pages).

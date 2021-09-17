@@ -1,2 +1,70 @@
 # Resultados {#Resultados}
 
+O primeiro resultado que conseguimos foi a criação de um modelo para escrita
+do trabalho de conclusão de curso da Universidade Federal de Viçosa em *R*, ele
+está disponível em \url{https://github.com/GuilhermeFCO/TCC_UFV}. Após escrito
+e compilado ele cria um *Website* que pode ser facilmente disponibilizado no
+*Github* através da ferramenta *Github Pages*. Ele foi utilizado para a escrita
+deste relatório, e ficará disponibilizado no *site* que foi criado para o
+relatório dinâmico.
+
+O principal resultado foi o *Website* Covid-19 Brasil, disponível em 
+\url{guilhermefco.github.io/covid19brasil/}. Com ele foi possível atingir o
+objetivo principal do projeto. Ele possuí a página Ínicio, nela contendo 
+informações sobre os índices, contato com os autores e o que você encontrará
+no *site*. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Ínicio do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/inicio.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:inicio}
+\end{figure}
+
+Na página Covid, encontra-se os dados da Covid-19 e suas visualizações gráficas.
+Como pode ser visto na imagem a baixo, também se encontra a data dos dados e 
+caixas de seleção para mudar a variável de interesse nos gráficos. Ainda há 
+outras abas, que podem ver visualizações das regiões, estados, mesorregiões, 
+microrregiões e cidades, isto se aplica as páginas IDH e Correlação.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Covid do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/covidbrasil.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:covidbrasil}
+\end{figure}
+
+Na página IDH, é possível encontrar os índices, nele também contendo as abas
+Brasil, Regiões, Estados, Mesorregiões, Microrregiões e Cidades.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página IDH do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/estadoidh.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:estadoidh}
+\end{figure}
+
+Na página Correlação, é possível encontrar a correlação entre os índices e os 
+dados da Covid-19, também com as abas.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Correlação do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/regioescorr.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:regioescorr}
+\end{figure}
+
+Na página Relatório, é possível encontrar este relatório construído com o 
+primeiro resultado.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Relatório do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/relatorio.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:relatorio}
+\end{figure}

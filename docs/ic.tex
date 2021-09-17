@@ -115,7 +115,7 @@
 
 \title{Análise Descritiva e Comparativa da Covid-19}
 \author{Guilherme Fernandes Castro de Oliveira}
-\date{Última atualização: 16/09/2021}
+\date{Última atualização: 17/09/2021}
 
 \begin{document}
 \maketitle
@@ -370,40 +370,193 @@ presença de febre, tosse e dificuldade de respirar, é indicado procurar
 atendimento médico imediatamente. Primeiramente ligue por telefone se puder e
 siga as instruções da autoridade de saúde local.
 
-\hypertarget{uxedndice-de-desenvolvimento-humano}{%
-\subsection{Índice de Desenvolvimento Humano}\label{uxedndice-de-desenvolvimento-humano}}
-
 \hypertarget{objetivos}{%
-\subsection{Objetivos}\label{objetivos}}
+\section{Objetivos}\label{objetivos}}
 
-\hypertarget{estrutura-de-trabalho}{%
-\subsection{Estrutura de Trabalho}\label{estrutura-de-trabalho}}
+O objetivo principal do projeto foi construir através do \emph{Software R} e seus
+pacotes, um relatório dinâmico sobre a Covid-19 e a evolução da pandemia no
+Brasil. Também, entender o motivo da doença atingir distintos lugares em níveis
+diferentes, para isso, foram utilizados alguns indicadores sobre a qualidade de
+vida local. O Índice de Desenvolvimento Humano (IDH) que segundo \cite{pnudidh}
+se baseia na renda, educação e saúde local, o Índice de GINI, segundo
+\cite{ipeagini}, que mede o grau de desigualdade entre os mais pobres dos mais
+ricos, e o Índice de Vulnerabilidade Social (IVS) que é uma média de subíndices
+IVS Infraestrutura Urbana, IVS Capital Humano, IVS Renda e Trabalho, segundo
+\cite{ipeaivs}.
 
 \hypertarget{MateriaisMetodos}{%
 \section{Materiais e Métodos}\label{MateriaisMetodos}}
 
-\hypertarget{shiny}{%
-\subsection{Shiny}\label{shiny}}
+Primeiramente foram criados alguns protótipos para o aprendizado sobre
+o pacote \emph{Shiny} do \emph{Software R}, este permite a criação de aplicativos
+dinâmicos em linguagem \emph{R}. Foram utilizados os dados da Covid-19 para criar
+gráficos de linhas, gráficos de barras e mapas interativos através dos pacotes
+\emph{ggplot2}, \emph{plotly} e \emph{geobr}.
+
+Com protótipos feitos, e aprendido como os pacotes funcionavam, partimos para
+decidir como iriamos armazenar e atualizar os bancos de dados de forma
+automática. Para isso foi criado um pacote em \emph{R}, denominado \emph{covidBR},
+onde é possível fazer o \emph{download} dos dados atualizados diretamente da
+plataforma do Governo, através do pacote \emph{covid19br}, também fornecendo uma
+função que cria o banco de dados para a construção dos mapas com o pacote
+\emph{geobr}. O diferencial do pacote é que ele fornece não somente o banco de dados
+da Covid-19 mas como também os dados do IDH, GINI e IVS, retirados do
+\cite{atlas}, das Cidades, Microrregiões, Mesorregiões, Estados, Regiões e do
+País.
+
+Para armazenar os bancos de dados foi utilizado um repositório na plataforma
+\emph{Github}. Esta plataforma além de ser gratuita contém outros diferenciais, como
+a ferramenta \emph{Github Actions}, esta foi utilizada para atualizar o banco de
+dados diariamente de forma automático. Depois de corretamente configurado, os
+servidores do \emph{Github} criam uma máquina virtual, instala o \emph{Softare R}, e roda
+um \emph{script} que instala o pacote criado, utiliza as funções e salva no
+repositório \url{https://github.com/GuilhermeFCO/dataBaseCovid19}, assim ficando
+disponível para a leitura do banco de dados diretamente online, não necessitando
+ter que baixá-los ne uma máquina local.
+
+Devido a quantidade de dados, e as visualizações gráficas, nenhum servidor
+gratuito suportou o aplicativo. Para superar essa barreira, o aplicativo
+foi dividido em pequenos aplicativos \emph{shiny}, no total foram mais de 30. Dessa
+forma foi possível disponibilizar o relatório completo.
+
+Para atingir o objetivo principal foi criado um \emph{Website}, o Covid-19 Brasil,
+este contendo os dados da Covid-19 no Brasil, o Índice de Desenvolvimento Humano
+(IDH), o Índice de GINI, o Índice de Vulnerabilidade Social (IVS), e
+correlações entre estes índices e a doença.
+
+Foi decidido 3 tipos de gráficos que estão contidos no \emph{site}, criados através
+dos pacotes \emph{covidBR}, \emph{plotly} e \emph{ggplot2}, sendo gráficos interativos. O
+primeiro é um mapa de calor, que pode ser observado na figura a seguir.
+
+\begin{figure}[H]
+    \centering
+    \caption{Mapa de calor do Número de Casos Acumulados no Brasil}
+    \includegraphics[width=10cm]{img/mapa.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:mapa}
+\end{figure}
+
+Este mapa mostra o Número de Casos Acumulados no Brasil, como é possível
+observar, a região Sudeste está preenchido com uma cor mais escura que as outras
+regiões, isso indica que a região Sudeste tem mais casos acumulados do que as
+demais regiões. Com este gráfico de mapa de calor, também é possível observar
+outros fatores. No site ele está sendo utilizado com os dados de número de casos
+acumulados da Covid, novos casos confirmados, número de óbitos acumulados,
+número de novos óbitos, IDH, IVS, Índice de GINI, correlação entre os índices e
+os dados da Covid-19.
+
+Outro gráfico foi o de barras, neste contendo o número de novos casos
+confirmados e o número de novos óbitos, quando se passa o \emph{mouse} sobre o
+gráfico, é possível observar o número de novos casos confirmados e o número de
+novos óbitos na data, como é possível observar na figura abaixo.
+
+\begin{figure}[H]
+    \centering
+    \caption{Gráfico de Barras do Número de Novos Casos Confirmados e Novos Óbitos no Brasil}
+    \includegraphics[width=10cm]{img/barra.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:barra}
+\end{figure}
+
+Há também o gráfico de densidade. Nele sendo possível observar o número de casos
+acumulados e número de óbitos acumulados, e sendo interativo como o anterior.
+
+\begin{figure}[H]
+    \centering
+    \caption{Gráfico Densidade do Número de Casos Acumulados e Casos Acumulados de Óbitos no Brasil}
+    \includegraphics[width=10cm]{img/densidade.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:densidade}
+\end{figure}
+
+Além dos gráficos também foram utilizadas caixas, nelas contendos valores, como
+por exemplo o número de casos acumulados. Mas também, foram utilizadas para o
+número de óbitos acumulados, número de novos casos confirmados, número de novos
+óbitos, IDH, IVS, Índice de GINI, as correlações entre os índices e os dados da
+covid e seus respectivos \emph{p-value}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Caixa Mostrando o Número de Casos Acumulados no Brasil}
+    \includegraphics[width=10cm]{img/caixa.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:caixa}
+\end{figure}
 
 \hypertarget{Resultados}{%
 \section{Resultados}\label{Resultados}}
 
+O primeiro resultado que conseguimos foi a criação de um modelo para escrita
+do trabalho de conclusão de curso da Universidade Federal de Viçosa em \emph{R}, ele
+está disponível em \url{https://github.com/GuilhermeFCO/TCC_UFV}. Após escrito
+e compilado ele cria um \emph{Website} que pode ser facilmente disponibilizado no
+\emph{Github} através da ferramenta \emph{Github Pages}. Ele foi utilizado para a escrita
+deste relatório, e ficará disponibilizado no \emph{site} que foi criado para o
+relatório dinâmico.
+
+O principal resultado foi o \emph{Website} Covid-19 Brasil, disponível em
+\url{guilhermefco.github.io/covid19brasil/}. Com ele foi possível atingir o
+objetivo principal do projeto. Ele possuí a página Ínicio, nela contendo
+informações sobre os índices, contato com os autores e o que você encontrará
+no \emph{site}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Ínicio do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/inicio.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:inicio}
+\end{figure}
+
+Na página Covid, encontra-se os dados da Covid-19 e suas visualizações gráficas.
+Como pode ser visto na imagem a baixo, também se encontra a data dos dados e
+caixas de seleção para mudar a variável de interesse nos gráficos. Ainda há
+outras abas, que podem ver visualizações das regiões, estados, mesorregiões,
+microrregiões e cidades, isto se aplica as páginas IDH e Correlação.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Covid do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/covidbrasil.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:covidbrasil}
+\end{figure}
+
+Na página IDH, é possível encontrar os índices, nele também contendo as abas
+Brasil, Regiões, Estados, Mesorregiões, Microrregiões e Cidades.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página IDH do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/estadoidh.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:estadoidh}
+\end{figure}
+
+Na página Correlação, é possível encontrar a correlação entre os índices e os
+dados da Covid-19, também com as abas.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Correlação do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/regioescorr.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:regioescorr}
+\end{figure}
+
+Na página Relatório, é possível encontrar este relatório construído com o
+primeiro resultado.
+
+\begin{figure}[H]
+    \centering
+    \caption{Página Relatório do \textit{site} Covid-19 Brasil}
+    \includegraphics[width=10cm]{img/relatorio.png} \\
+    {\footnotesize \textbf{Fonte: }Autor}
+    \label{fig:relatorio}
+\end{figure}
+
 \nocite{*}
 
   \bibliography{ic.bib,packages.bib}
-
-\hypertarget{appendix-appendix}{%
-\appendix}
-
-
-\hypertarget{primeiro-apuxeandice}{%
-\section{Primeiro Apêndice}\label{primeiro-apuxeandice}}
-
-Este é so um exemplo de Apêndice.
-
-\hypertarget{segundo-apuxeandice}{%
-\section{Segundo Apêndice}\label{segundo-apuxeandice}}
-
-Este é so mais um exemplo de Apêndice.
 
 \end{document}
