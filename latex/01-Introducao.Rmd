@@ -169,15 +169,12 @@ presença de febre, tosse e dificuldade de respirar, é indicado procurar
 atendimento médico imediatamente. Primeiramente ligue por telefone se puder e 
 siga as instruções da autoridade de saúde local.
 
-## Índice de Desenvolvimento Humano
-
-
-
-
-
 ## Objetivos
 
-
+O objetivo principal do projeto foi construir através do *Software R* e seus 
+pacotes, um relatório dinâmico sobre a Covid-19 e a evolução da pandemia no
+Brasil. Também, entender o motivo da doença atingir distintos lugares com níveis
+diferentes. 
 
 
 ## Estrutura de Trabalho
